@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <div class="title">
+        <h1>Calculator</h1>
+    </div>
+
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" placeholder="2+2-2*2/2">
+
+        </div>
+
+        <div class="button-container">
+            <div class="btn" onclick="clearAll()" id="clear-all">AC</div>
+            <div class="btn" onclick="lastDel()" id="remove">DEL</div>
+            <div class="btn" onclick="value('%')" id="percent">%</div>
+            <div class="btn" onclick="value('/')" id="div">/</div>
+            <div class="btn" onclick="value('7')" id="seven">7</div>
+            <div class="btn" onclick="value('8')" id="eight">8</div>
+            <div class="btn" onclick="value('9')" id="nine">9</div>
+            <div class="btn" onclick="value('*')" id="mul">x</div>
+            <div class="btn" onclick="value('4')" id="four">4</div>
+            <div class="btn" onclick="value('5')" id="five">5</div>
+            <div class="btn" onclick="value('6')" id="six">6</div>
+            <div class="btn" onclick="value('-')" id="sub">-</div>
+            <div class="btn" onclick="value('1')" id="one">1</div>
+            <div class="btn" onclick="value('2')" id="two">2</div>
+            <div class="btn" onclick="value('3')" id="three">3</div>
+            <div class="btn" onclick="value('+')" id="add">+</div>
+            <div class="btn" onclick="value('00')" id="dbl-zero">00</div>
+            <div class="btn" onclick="value('0')" id="zero">0</div>
+            <div class="btn" onclick="value('.')" id="dot">.</div>
+            <div class="btn" onclick="calculate()" id="equal">=</div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Develop by: M.FAIZAN</p>
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
